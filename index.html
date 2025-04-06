@@ -547,32 +547,61 @@
     const audioIcon = document.querySelector('.audio-icon-wrapper i');
     const song = document.querySelector('#song');
     let isPlaying = false;
-
+  
+    // Simpan posisi scroll terakhir
+    let scrollPosition = { top: 0, left: 0 };
+  
     function disableScroll() {
-      scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-      scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
-
-      window.onscroll = function () {
-        window.scrollTo(scrollTop, scrollLeft);
-      }
-
+      scrollPosition = {
+        top: window.pageYOffset || document.documentElement.scrollTop,
+        left: window.pageXOffset || document.documentElement.scrollLeft
+      };
+  
+      // Kunci posisi scroll
+      window.addEventListener('scroll', lockScroll);
+      window.addEventListener('wheel', preventDefault, { passive: false });
+      window.addEventListener('touchmove', preventDefault, { passive: false });
+      window.addEventListener('keydown', preventKeyScroll, false);
+  
+      // Juga kunci via CSS
+      document.body.style.overflow = 'hidden';
       rootElement.style.scrollBehavior = 'auto';
     }
-
+  
     function enableScroll() {
-      window.onscroll = function () { }
+      window.removeEventListener('scroll', lockScroll);
+      window.removeEventListener('wheel', preventDefault);
+      window.removeEventListener('touchmove', preventDefault);
+      window.removeEventListener('keydown', preventKeyScroll);
+  
+      document.body.style.overflow = '';
       rootElement.style.scrollBehavior = 'smooth';
-      // localStorage.setItem('opened', 'true');
       playAudio();
     }
-
+  
+    function lockScroll() {
+      window.scrollTo(scrollPosition.left, scrollPosition.top);
+    }
+  
+    function preventDefault(e) {
+      e.preventDefault();
+    }
+  
+    function preventKeyScroll(e) {
+      // Tombol yang bisa menyebabkan scroll
+      const keys = [32, 33, 34, 35, 36, 37, 38, 39, 40];
+      if (keys.includes(e.keyCode)) {
+        e.preventDefault();
+      }
+    }
+  
     function playAudio() {
       song.volume = 1;
       audioIconWrapper.style.display = 'flex';
       song.play();
       isPlaying = true;
     }
-
+  
     audioIconWrapper.onclick = function () {
       if (isPlaying) {
         song.pause();
@@ -583,12 +612,12 @@
         audioIcon.classList.add('bi-disc');
         audioIcon.classList.remove('bi-pause-circle');
       }
-
+  
       isPlaying = !isPlaying;
     }
-
+  
     disableScroll();
-  </script>
+  </script>  
   <!-- MUSIC SCRIPT -->
 
 

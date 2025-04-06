@@ -393,8 +393,8 @@ body {
   top: 0;
   bottom: 0;
   position: absolute;
-  width: 1px;
-  background-color: var(--combo3);
+  width: 2px;
+  background-color: var(--combo2);
   left: 50%;
 }
 
@@ -414,9 +414,9 @@ body {
 }
 
 .timeline li .timeline-image {
-  width: 160px;
-  height: 160px;
-  background-color: var(--combo4);
+  width: 200px;
+  height: 200px;
+  background-color: var(--combo2);
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -429,11 +429,11 @@ body {
 .timeline li .timeline-panel {
   width: 40%;
   float: left;
-  border: 1px solid var(--combo3);
+  border: 1px solid var(--combo2);
   padding: 2rem;
   position: relative;
   border-radius: 8px;
-  background-color: var(--combo3);
+  background-color: var(--combo2);
   transform: translateX(-10px);
 }
 
@@ -442,8 +442,8 @@ body {
   display: inline-block;
   position: absolute;
   border-top: 15px solid transparent;
-  border-left: 15px solid var(--combo3);
-  border-right: 0 solid var(--combo3);
+  border-left: 15px solid var(--combo2);
+  border-right: 0 solid var(--combo2);
   border-bottom: 15px solid transparent;
   top: 80px;
   right: -15px;
@@ -454,8 +454,8 @@ body {
   position: absolute;
   display: inline-block;
   border-top: 14px solid transparent;
-  border-left: 14px solid var(--combo3);
-  border-right: 0 solid var(--combo3);
+  border-left: 14px solid var(--combo2);
+  border-right: 0 solid var(--combo2);
   border-bottom: 14px solid transparent;
   top: 81px;
   right: -13px;
@@ -835,7 +835,7 @@ footer li {
   }
 
   .simply-countdown > .simply-section {
-    padding: 70px;
+    padding: 65px;
   }
 
   .timeline::before {
@@ -843,7 +843,9 @@ footer li {
   }
 
   .timeline li .timeline-image {
-    left: 15px;
+    width: 140px;
+    height: 140px;
+    left: 20px;
     margin-left: 45px;
     top: 16px;
   }
@@ -875,7 +877,7 @@ footer li {
   }
 
   .simply-countdown > .simply-section {
-    padding: 60px;
+    padding: 50px;
     margin: 5px;
   }
 
@@ -901,13 +903,13 @@ footer li {
   }
 
   .simply-countdown > .simply-section {
-    padding: 35px;
+    padding: 30px;
     margin: 2px;
   }
 
   .timeline li .timeline-image {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
   }
 
   .timeline li .timeline-panel {
