@@ -598,13 +598,26 @@ body {
 }
 
 .rsvp form label {
+  font-size: 1.3rem;
+  font-weight: 500;
   color: var(--combo1);
 }
 
+.rsvp form input, .rsvp form select {
+  font-size: 1.3rem;
+  font-weight: 500;
+  background: none;
+  border: 1px solid var(--combo1);
+} 
+
 .rsvp button {
+  font-size: 1.3rem;
+  font-weight: 500;
   background-color: var(--combo3);
   color: var(--combo1);
   box-shadow: var(--shadow);
+  height: 30px;
+  width: 80px;
   border: 1px solid var(--combo3);
 }
 
@@ -615,24 +628,13 @@ body {
 }
 
 .rsvp .comments {
-  max-height: 200px;
+  max-height: 400px;
   width: 100%;
   display: flex;
   flex-direction: column;
   overflow-y: auto;
   padding-top: 10px;
   margin-bottom: 10px;
-}
-
-.rsvp .listkomentar {
-  color: var(--combo1);
-  font-size: 1.5rem;
-  text-align: center;
-}
-
-.rsvp .listkomentar #comment {
-  color: var(--combo1);
-  font-size: 1.5rem;
 }
 
 .scroll .sh {
@@ -644,7 +646,9 @@ body {
 }
 
 .parents {
-  font-family: Arial, sans-serif;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 500;
   display: flex;
   border: 1px solid var(--combo1);
   border-radius: 10px;
@@ -656,14 +660,17 @@ body {
 }
 
 .parents p {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 500;
   margin: 2px 0;
-  font-size: 0.9em;
 }
 
 .engagements {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 5px;
 }
 
 .engagements img {
@@ -672,13 +679,29 @@ body {
 }
 
 .engagements img:nth-child(1) {
-  width: 10px;
-  height: 10px;
+  width: 20px;
+  height: 20px;
 }
 
 .engagements .date {
   color: var(--combo1);
-  font-size: 0.8em;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+@keyframes bounceDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(6px);
+  }
+}
+
+.arrow-bounce {
+  animation: bounceDown 1s ease-in-out infinite;
+  font-size: 1rem;
 }
 
 .gifts {

@@ -366,19 +366,19 @@
           <div class="col-md-12">
             <div class="mb-3">
               <label for="nama" class="form-label">Nama</label>
-              <input type="text" class="form-control nama" id="nama" name="nama">
+              <input type="text" class="form-control nama" style="height: 30px;" id="nama" name="nama">
             </div>
           </div>
           <div class="col-md-12">
             <div class="mb-3">
               <label for="jumlah" class="form-label">Jumlah</label>
-              <input type="number" class="form-control" id="jumlah" name="jumlah" min="1" max="5" length="1" value="1">
+              <input type="number" class="form-control" style="height: 30px;" id="jumlah" name="jumlah" min="1" max="5" length="1" value="1">
             </div>
           </div>
           <div class="col-md-12">
             <div class="mb-3">
               <label for="kehadiran" class="form-label">Konfirmasi</label>
-              <select name="kehadiran" id="kehadiran" class="form-select">
+              <select name="kehadiran" id="kehadiran" class="form-select" style="height: 30px;">
                 <option selected>Pilih salah satu</option>
                 <option value="Hadir">Hadir</option>
                 <option value="Tidak Hadir">Tidak Hadir</option>
@@ -388,7 +388,7 @@
           <div class="col-md-12">
             <div class="mb-3">
               <label for="pesan" class="form-label">Pesan</label>
-              <input type="text" placeholder="Tuliskan pesan" class="form-control usercomment" id="pesan" name="pesan">
+              <input type="text" placeholder="Tuliskan pesan" class="form-control usercomment" style="height: 30px;" id="pesan" name="pesan">
             </div>
           </div>
           <div class="col-md-12" style="margin-bottom: 10px;">
@@ -396,6 +396,10 @@
           </div>
           <div class="col-md-12" style="margin-bottom: 10px;">
             <div class="comments"></div>
+            <div id="scroll-message" style="display: none; text-align: center; font-size: 0.9rem; color: var(--combo1); display: flex; justify-content: center; align-items: center; gap: 5px;">
+              <span>Scroll up for more comments</span>
+              <i class="bi bi-caret-down-fill arrow-bounce"></i>
+            </div>
           </div>
         </form>
         <img src="img\gold-assets\line-bottom-1.png" class="sec-down">
@@ -742,6 +746,30 @@
   publishBtn.addEventListener("click", addPost);
   </script>
   <!-- RSVP SCRIPT -->
+
+
+  <!-- SCROLL COMMENTS -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const commentsBox = document.querySelector(".comments");
+      const scrollMsg = document.getElementById("scroll-message");
+  
+      function checkOverflow() {
+        if (commentsBox.scrollHeight > commentsBox.clientHeight) {
+          scrollMsg.style.display = "block";
+        } else {
+          scrollMsg.style.display = "none";
+        }
+      }
+  
+      checkOverflow();
+  
+      // Optional: jalankan ulang saat komen baru ditambahkan
+      const observer = new MutationObserver(checkOverflow);
+      observer.observe(commentsBox, { childList: true });
+    });
+  </script>  
+  <!-- SCROLL COMMENTS -->
 
 
   <!-- COPY ADDRESS & ACCOUNT BANK NUMBER -->
