@@ -1,4 +1,3 @@
-
 <h1 align="center">💍 Wedding Invitation of Groom & Bride 💐</h1>
 
 <p align="center">
@@ -12,26 +11,32 @@
 
 ---
 
-## 📸 Tampilan Undangan
+## ✨ Fitur Unggulan
 
-| Cover (Hero) | Mempelai | Acara |
-|--------------|----------|--------|
-| ![SS1](./img/screenshots/SS1.png) | ![SS2](./img/screenshots/SS2.png) | ![SS3](./img/screenshots/SS3.png) |
-
-| Story Timeline | RSVP & Ucapan | Penutup |
-|----------------|----------------|---------|
-| ![SS4](./img/screenshots/SS4.png) | ![SS8](./img/screenshots/SS8.png) | ![SS9](./img/screenshots/SS9.png) |
+- 🎨 Tampilan eksklusif dengan sentuhan modern dan mewah
+- 📱 Mobile-first design, dioptimalkan untuk pengguna smartphone
+- 📸 Galeri foto dan cerita cinta dengan animasi elegan
+- 📆 Informasi lengkap tanggal dan lokasi acara
+- 📍 Integrasi Google Maps langsung ke lokasi
+- 📝 RSVP digital dengan form interaktif
+- 💬 Komentar & ucapan secara langsung
+- 🌙 Efek animasi scroll & transisi halus
 
 ---
 
-## 🎨 Fitur Desain
+## 📷 Tampilan Undangan
 
-- 🌟 **Tema Elegan**: Kombinasi warna emas dan coklat yang mewah
-- 📱 **Mobile-First**: Responsif untuk tampilan di semua jenis smartphone
-- 📖 **Timeline Cerita**: Desain kiri-kanan dengan efek visual yang dinamis
-- 💬 **Form RSVP & Ucapan**: Interaktif dan mudah digunakan
-- 🌿 **Motif Dekoratif**: Aksen gelombang, bunga, dan ornamen lembut
-- ✨ **Animasi Halus**: Efek scroll dan fade untuk pengalaman pengguna yang lebih indah
+| Tampilan 1                   | Tampilan 2                   | Tampilan 3                   |
+| ---------------------------- | ---------------------------- | ---------------------------- |
+| ![](img/screenshots/SS1.png) | ![](img/screenshots/SS2.png) | ![](img/screenshots/SS3.png) |
+| ---------------------------- | ---------------------------- | ---------------------------- |
+| Tampilan 4                   | Tampilan 5                   | Tampilan 6                   |
+| ---------------------------- | ---------------------------- | ---------------------------- |
+| ![](img/screenshots/SS4.png) | ![](img/screenshots/SS5.png) | ![](img/screenshots/SS6.png) |
+| ---------------------------- | ---------------------------- | ---------------------------- |
+| Tampilan 7                   | Tampilan 8                   | Tampilan 9                   |
+| ---------------------------- | ---------------------------- | ---------------------------- |
+| ![](img/screenshots/SS7.png) | ![](img/screenshots/SS8.png) | ![](img/screenshots/SS9.png) |
 
 ---
 
@@ -64,25 +69,27 @@
 
 ---
 
-## 📦 Cara Menjalankan Proyek
+## 🌐 Demo Live
 
-1. **Clone Repository:**
-
-```bash
-git clone https://github.com/username/wedding-a.git
-cd wedding-a
-```
-
-2. **Buka di browser lokal:**
-
-Cukup buka `index.html` di browser mobile Anda atau gunakan dev tools > mobile view.
+🔗 [Lihat Undangan Digital](https://andhikawahyuputra.github.io/wedding-a/)
 
 ---
 
-## 🌐 Demo Online
+## 🚀 Cara Menjalankan
 
-📱 Buka undangan digital secara langsung melalui:  
-👉 [https://andhikawahyuputra.github.io/wedding-a/](https://andhikawahyuputra.github.io/wedding-a/)
+1. Clone repository ini
+
+   ```bash
+   git clone https://github.com/andhikawahyuputra/wedding-a.git
+   ```
+
+2. Buka `index.html` di browser, atau upload ke GitHub Pages untuk akses online.
+
+---
+
+## 🧾 Lisensi
+
+Proyek ini menggunakan lisensi MIT. Silakan digunakan dan dimodifikasi sesuai kebutuhan.
 
 ---
 
@@ -96,4 +103,4 @@ Terima kasih telah berkunjung ke undangan pernikahan kami. Semoga karya ini bisa
 ---
 
 **With love,**  
-💌 *Groom & Bride*
+💌 _Groom & Bride_
