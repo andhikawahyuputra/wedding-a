@@ -29,11 +29,11 @@
 | Tampilan 1                   | Tampilan 2                   | Tampilan 3                   |
 | ---------------------------- | ---------------------------- | ---------------------------- |
 | ![](img/screenshots/SS1.png) | ![](img/screenshots/SS2.png) | ![](img/screenshots/SS3.png) |
-| ---------------------------- | ---------------------------- | ---------------------------- |
+
 | Tampilan 4                   | Tampilan 5                   | Tampilan 6                   |
 | ---------------------------- | ---------------------------- | ---------------------------- |
 | ![](img/screenshots/SS4.png) | ![](img/screenshots/SS5.png) | ![](img/screenshots/SS6.png) |
-| ---------------------------- | ---------------------------- | ---------------------------- |
+
 | Tampilan 7                   | Tampilan 8                   | Tampilan 9                   |
 | ---------------------------- | ---------------------------- | ---------------------------- |
 | ![](img/screenshots/SS7.png) | ![](img/screenshots/SS8.png) | ![](img/screenshots/SS9.png) |
@@ -84,12 +84,6 @@
    ```
 
 2. Buka `index.html` di browser, atau upload ke GitHub Pages untuk akses online.
-
----
-
-## 🧾 Lisensi
-
-Proyek ini menggunakan lisensi MIT. Silakan digunakan dan dimodifikasi sesuai kebutuhan.
 
 ---
 
